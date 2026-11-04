@@ -24,7 +24,7 @@ HOME DELIVERY = Cartons Only
 <div style="padding:15px">
 
 <div style="background:white;padding:15px;border-radius:12px;margin-bottom:15px">
-<img src="IMG_e1ea0e70-91c.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:10px">
+<img id="boostup-img" src="IMG_e1ea0e70-91c.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:10px">
 <h3>Boostup</h3>
 <p>Rs. 600 / Carton</p>
 <a href="https://api.whatsapp.com/send?phone=923323621719&text=I%20want%20Boostup" style="background:#25D366;color:white;padding:8px 20px;border-radius:20px;text-decoration:none;font-weight:bold">Order</a>
@@ -52,7 +52,7 @@ HOME DELIVERY = Cartons Only
 </div>
 
 <div style="background:white;padding:15px;border-radius:12px;margin-bottom:15px">
-<img src="images_19f16652-741c.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:10px">
+<img id="dubai-img" src="images_19f16652-741c.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:10px">
 <h3>Aab-e-Dubai</h3>
 <p>Rs. 350 / Carton</p>
 <a href="https://api.whatsapp.com/send?phone=923323621719&text=I%20want%20Aab-e-Dubai" style="background:#25D366;color:white;padding:8px 20px;border-radius:20px;text-decoration:none;font-weight:bold">Order</a>
@@ -69,6 +69,17 @@ HOME DELIVERY = Cartons Only
 <a style="background:#25D366;color:white;padding:12px 25px;border-radius:25px;text-decoration:none;display:inline-block;font-weight:bold" href="https://api.whatsapp.com/send?phone=923323621719&text=Hello%20AA%20Traders">WhatsApp Order</a>
 <p style="color:green;font-weight:bold">Delivery Only in Karachi</p>
 </div>
+
+<script>
+fetch('https://api.github.com/repos/muhammedahmedshoaib30/aa-traders/contents/')
+.then(r=>r.json())
+.then(files=>{
+  files.forEach(f=>{
+    if(f.name.startsWith('IMG_e1ea')) document.getElementById('boostup-img').src = f.name;
+    if(f.name.startsWith('images_19f')) document.getElementById('dubai-img').src = f.name;
+  });
+});
+</script>
 
 </body>
 </html>
