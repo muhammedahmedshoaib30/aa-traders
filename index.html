@@ -18,22 +18,24 @@ header{background:#fff;padding:14px 16px;display:flex;align-items:center;justify
 .hero-btn{background:#fff;color:#0a7a2f;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:900;display:inline-block}
 .search-box{padding:14px 16px}
 .search-box input{width:100%;padding:13px 15px;border-radius:30px;border:1px solid #ddd;font-size:15px;outline:none}
-.grid{padding:0 14px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.grid{padding:0 12px 20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch}
 .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.07);display:flex;flex-direction:column;height:100%}
-.card img{width:100%;height:200px;object-fit:contain;background:#fff;padding:10px;display:block;flex-shrink:0}
-.card-body{padding:11px;display:flex;flex-direction:column;flex:1}
-.card-body h3{font-size:16px;margin-bottom:4px;min-height:20px}
-.card-body .tag{font-size:12px;color:#0a7a2f;font-weight:700;min-height:16px}
-.sizes{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px;min-height:28px;align-content:flex-start}
-.sizes span{background:#f0f9f2;border:1px solid #c8eecf;color:#0a5a23;font-size:11px;font-weight:700;padding:5px 7px;border-radius:20px}
-.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:6px 8px;margin-top:6px;width:100%;overflow:hidden}
-.price-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px;padding:6px 0 2px;width:100%}
-.price-row b{font-size:12px;text-align:left;line-height:1.2;white-space:nowrap;overflow:hidden}
-.price-row .rs{color:#0a7a2f;font-weight:900;font-size:12px;white-space:nowrap;text-align:right;line-height:1.2}
+.card img{width:100%;height:190px;object-fit:contain;background:#fff;padding:10px;display:block;flex-shrink:0}
+.card-body{padding:10px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:15px;margin-bottom:4px;line-height:1.2}
+.card-body .tag{font-size:12px;color:#0a7a2f;font-weight:700}
+.sizes{margin:10px 0;display:flex;flex-wrap:wrap;gap:5px}
+.sizes span{background:#f0f9f2;border:1px solid #c8eecf;color:#0a5a23;font-size:11px;font-weight:700;padding:5px 6px;border-radius:20px}
+/* RATE BOX - AB KUCH NAHI KATEGA */
+.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:6px 6px;margin-top:6px;width:100%}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:4px;padding:6px 0 2px;width:100%}
+.price-row b{font-size:11px;text-align:left;line-height:1.3;flex:1}
+.price-row .rs{color:#0a7a2f;font-weight:900;font-size:11px;text-align:right;line-height:1.3;flex-shrink:0}
 .pcs{font-size:11px;color:#666;font-weight:600;text-align:left;padding-bottom:6px;border-bottom:1px solid #ffe9a8}
 .pcs:last-child{border-bottom:none}
-.order-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;padding:11px;border-radius:10px;font-weight:800;margin-top:auto;font-size:14px}
-.spacer{flex:1}
+/* WHATSAPP BUTTON - AB SAB EK JAGAH FIX */
+.order-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;padding:11px 5px;border-radius:10px;font-weight:800;margin-top:auto;font-size:13px;width:100%}
+.spacer{flex:1;min-height:10px}
 .info{background:#fff;margin:0 14px 14px;padding:16px;border-radius:16px}
 .info h2{font-size:18px;margin-bottom:8px}
 .info li{margin-left:18px;margin-bottom:6px;font-size:14px}
@@ -115,4 +117,89 @@ footer a{color:#25D366;text-decoration:none;font-weight:700}
 <div class="pcs">24 Piece in Carton</div>
 </div>
 <div class="spacer"></div>
-<a
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Quice%20Juice%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 4. BOOSTUP -->
+<div class="card" data-name="boostup boost up quice">
+<img src="IMG_e1ea0e70-91cc-4194-b022-d5d6f805b219.jpg" alt="Boostup">
+<div class="card-body">
+<h3>Boostup</h3><div class="tag">Energy Drink - Quice</div>
+<div class="sizes"><span>300 ML</span></div>
+<div class="price-box">
+<div class="price-row"><b>300 ML</b><span class="rs">Rs 600 / Carton</span></div>
+<div class="pcs">12 Piece in Carton</div>
+</div>
+<div class="spacer"></div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Boostup%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 5. QUICE ICE CREAM SODA -->
+<div class="card" data-name="quice ice cream soda">
+<img src="96-965813_transparent-soft-drinks-clipart-quice-ice-cream-soda.png" alt="Quice Ice Cream Soda">
+<div class="card-body">
+<h3>Quice Ice Cream Soda</h3><div class="tag">Ice Cream Soda - Quice</div>
+<div class="sizes"><span>1.5 Liter - 6 Pcs</span><span>300 ML - 12 Pcs</span></div>
+<div class="price-box">
+<div class="price-row"><b>1.5 Liter</b><span class="rs">Rs 900 / Carton</span></div>
+<div class="pcs">6 Piece in Carton</div>
+<div class="price-row"><b>300 ML</b><span class="rs">Rs 600 / Carton</span></div>
+<div class="pcs">12 Piece in Carton</div>
+</div>
+<div class="spacer"></div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Quice%20Ice%20Cream%20Soda%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 6. AAB-E-DUBAI -->
+<div class="card" data-name="aab e dubai water">
+<img src="images_19f16652-741c-41a6-8775-26fa00700fcd_447x447.jpg" alt="Aab-e-Dubai">
+<div class="card-body">
+<h3>Aab-e-Dubai</h3><div class="tag">Mineral Water</div>
+<div class="sizes"><span>1.5 Liter</span><span>500 ML</span></div>
+<div class="price-box">
+<div class="price-row"><b>1.5 Liter</b><span class="rs">Rs 750 / Carton</span></div>
+<div class="pcs">6 Piece in Carton</div>
+<div class="price-row"><b>500 ML</b><span class="rs">Rs 850 / Carton</span></div>
+<div class="pcs">12 Piece in Carton</div>
+</div>
+<div class="spacer"></div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Aab-e-Dubai%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+</div>
+
+<div class="info">
+<h2>AA Traders - Azizabad</h2>
+<ul>
+<li>Only Carton Wholesale Rate</li>
+<li>Home Delivery Available in Karachi</li>
+<li>For Shop and Home Both</li>
+<li>Fresh Stock - Cold Delivery</li>
+</ul>
+<p style="margin-top:10px"><b>Order on WhatsApp:</b> <a href="https://wa.me/923323621719" style="color:#0a7a2f">0332-3621719</a></p>
+</div>
+
+<footer>
+<b>AA TRADERS</b><br>
+Azizabad, Karachi<br>
+WhatsApp: <a href="https://wa.me/923323621719">0332-3621719</a><br>
+© 2026 AA Traders - All Rights Reserved
+</footer>
+
+<script>
+function filter(){
+var v=document.getElementById('search').value.toLowerCase();
+var cards=document.querySelectorAll('.card');
+cards.forEach(function(c){
+var n=c.getAttribute('data-name');
+c.style.display = n.includes(v) ? 'flex' : 'none';
+});
+}
+</script>
+
+</body>
+</html>
