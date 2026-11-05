@@ -20,24 +20,23 @@ header{background:#fff;padding:14px 16px;display:flex;align-items:center;justify
 .search-box input{width:100%;padding:13px 15px;border-radius:30px;border:1px solid #ddd;font-size:15px;outline:none}
 .grid{padding:0 14px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.07);display:flex;flex-direction:column}
-.card img{width:100%;height:150px;object-fit:cover;background:#e8f5e9}
+.card img{width:100%;height:210px;object-fit:contain;background:#fff;padding:10px;display:block}
 .card-body{padding:12px}
 .card-body h3{font-size:17px;margin-bottom:4px}
 .card-body .tag{font-size:12px;color:#0a7a2f;font-weight:700}
 .sizes{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px}
 .sizes span{background:#f0f9f2;border:1px solid #c8eecf;color:#0a5a23;font-size:11px;font-weight:700;padding:5px 7px;border-radius:20px}
-.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:8px;margin-top:6px}
-.price-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #ffe9a8}
+.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:8px 10px;margin-top:6px}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #ffe9a8}
 .price-row:last-child{border-bottom:none}
-.price-row b{font-size:13px}
-.price-row .rs{color:#0a7a2f;font-weight:900;font-size:13px;white-space:nowrap}
+.price-row b{font-size:13px;text-align:left}
+.price-row .rs{color:#0a7a2f;font-weight:900;font-size:13px;white-space:nowrap;text-align:right;min-width:110px}
 .order-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;padding:10px;border-radius:10px;font-weight:800;margin-top:10px;font-size:14px}
 .info{background:#fff;margin:0 14px 14px;padding:16px;border-radius:16px}
 .info h2{font-size:18px;margin-bottom:8px}
 .info li{margin-left:18px;margin-bottom:6px;font-size:14px}
 footer{background:#111;color:#fff;text-align:center;padding:20px 14px;font-size:13px;line-height:1.8}
 footer a{color:#25D366;text-decoration:none;font-weight:700}
-@media(max-width:400px){.card img{height:130px}}
 </style>
 </head>
 <body>
@@ -59,11 +58,11 @@ footer a{color:#25D366;text-decoration:none;font-weight:700}
 <input type="text" id="search" placeholder="Search... Cola, Quice, Boostup..." onkeyup="filter()">
 </div>
 
-<div class="grid" id="grid">
+<div class="grid">
 
 <!-- 1. COLA NEXT -->
 <div class="card" data-name="cola next">
-<img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=400&h=400&fit=crop" alt="Cola Next">
+<img src="images/cola-next.jpg" alt="Cola Next">
 <div class="card-body">
 <h3>Cola Next</h3><div class="tag">Cold - Original</div>
 <div class="sizes"><span>1.5 Liter</span><span>500 ML</span><span>300 ML</span></div>
@@ -76,38 +75,11 @@ footer a{color:#25D366;text-decoration:none;font-weight:700}
 </div>
 </div>
 
-<!-- 2. QUICE JUICE -->
-<div class="card" data-name="quice juice">
-<img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop" alt="Quice Juice">
-<div class="card-body">
-<h3>Quice Juice</h3><div class="tag">Mango - Orange - Apple</div>
-<div class="sizes"><span>250 ML</span><span>200 ML</span></div>
-<div class="price-box">
-<div class="price-row"><b>250 ML</b><span class="rs">Rs 1000 / Carton</span></div>
-<div class="price-row"><b>200 ML</b><span class="rs">Rs 750 / Carton</span></div>
-</div>
-<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Quice%20Juice%20carton">Order on WhatsApp</a>
-</div>
-</div>
-
-<!-- 3. BOOSTUP -->
-<div class="card" data-name="boostup boost up">
-<img src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?w=400&h=400&fit=crop" alt="Boostup">
-<div class="card-body">
-<h3>Boostup</h3><div class="tag">Energy Drink</div>
-<div class="sizes"><span>300 ML</span></div>
-<div class="price-box">
-<div class="price-row"><b>300 ML</b><span class="rs">Rs 600 / Carton</span></div>
-</div>
-<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Boostup%20carton">Order on WhatsApp</a>
-</div>
-</div>
-
-<!-- 4. LYCHI -->
+<!-- 2. LYCHI -->
 <div class="card" data-name="lychi litchi quice">
-<img src="https://images.unsplash.com/photo-1589820296156-2454bb8a6ad1?w=400&h=400&fit=crop" alt="Lychi Drink">
+<img src="images/lychi.jpg" alt="Lychi Drink">
 <div class="card-body">
-<h3>Lychi Drink</h3><div class="tag">Lychi - Cold</div>
+<h3>Quice Lychi</h3><div class="tag">Lychi - Cold</div>
 <div class="sizes"><span>1.5 Liter</span><span>300 ML</span></div>
 <div class="price-box">
 <div class="price-row"><b>1.5 Liter</b><span class="rs">Rs 900 / Carton</span></div>
@@ -117,9 +89,50 @@ footer a{color:#25D366;text-decoration:none;font-weight:700}
 </div>
 </div>
 
-<!-- 5. AAB-E-DUBAI -->
-<div class="card" data-name="aab e dubai water pani">
-<img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=400&fit=crop" alt="Aab-e-Dubai">
+<!-- 3. QUICE MANGO JUICE -->
+<div class="card" data-name="quice juice mango">
+<img src="images/quice-mango.jpg" alt="Quice Mango Juice">
+<div class="card-body">
+<h3>Quice Juice - Mango</h3><div class="tag">Mango - Fruit Drink</div>
+<div class="sizes"><span>250 ML</span><span>200 ML</span></div>
+<div class="price-box">
+<div class="price-row"><b>250 ML</b><span class="rs">Rs 1000 / Carton</span></div>
+<div class="price-row"><b>200 ML</b><span class="rs">Rs 750 / Carton</span></div>
+</div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Quice%20Juice%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 4. BOOSTUP -->
+<div class="card" data-name="boostup boost up quice">
+<img src="images/boostup.jpg" alt="Boostup">
+<div class="card-body">
+<h3>Boostup</h3><div class="tag">Energy Drink - Quice</div>
+<div class="sizes"><span>300 ML</span></div>
+<div class="price-box">
+<div class="price-row"><b>300 ML</b><span class="rs">Rs 600 / Carton</span></div>
+</div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Boostup%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 5. QUICE ICE CREAM SODA - PAKOLA NAHI -->
+<div class="card" data-name="quice ice cream soda">
+<img src="images/quice-soda.jpg" alt="Quice Ice Cream Soda">
+<div class="card-body">
+<h3>Quice Ice Cream Soda</h3><div class="tag">Ice Cream Soda - Quice</div>
+<div class="sizes"><span>1.5 Liter</span><span>300 ML</span><span>250 ML</span></div>
+<div class="price-box">
+<div class="price-row"><b>1.5 Liter</b><span class="rs">Rs 900 / Carton</span></div>
+<div class="price-row"><b>300 ML</b><span class="rs">Rs 600 / Carton</span></div>
+</div>
+<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Quice%20Ice%20Cream%20Soda%20carton">Order on WhatsApp</a>
+</div>
+</div>
+
+<!-- 6. AAB-E-DUBAI -->
+<div class="card" data-name="aab e dubai water">
+<img src="images/aab-e-dubai.jpg" alt="Aab-e-Dubai">
 <div class="card-body">
 <h3>Aab-e-Dubai</h3><div class="tag">Mineral Water</div>
 <div class="sizes"><span>1.5 Liter</span><span>500 ML</span></div>
@@ -128,20 +141,6 @@ footer a{color:#25D366;text-decoration:none;font-weight:700}
 <div class="price-row"><b>500 ML</b><span class="rs">Rs 850 / Carton</span></div>
 </div>
 <a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Aab-e-Dubai%20carton">Order on WhatsApp</a>
-</div>
-</div>
-
-<!-- 6. PAKOLA -->
-<div class="card" data-name="pakola">
-<img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=400&fit=crop" alt="Pakola">
-<div class="card-body">
-<h3>Pakola</h3><div class="tag">Ice Cream Soda</div>
-<div class="sizes"><span>1.5 Liter</span><span>300 ML</span></div>
-<div class="price-box">
-<div class="price-row"><b>1.5 Liter</b><span class="rs">Rs 900 / Carton</span></div>
-<div class="price-row"><b>300 ML</b><span class="rs">Rs 650 / Carton</span></div>
-</div>
-<a class="order-btn" href="https://wa.me/923323621719?text=Hello%2C%20I%20want%20Pakola%20carton">Order on WhatsApp</a>
 </div>
 </div>
 
