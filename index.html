@@ -18,23 +18,23 @@ header{background:#fff;padding:14px 16px;display:flex;align-items:center;justify
 .hero-btn{background:#fff;color:#0a7a2f;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:900;display:inline-block}
 .search-box{padding:14px 16px}
 .search-box input{width:100%;padding:13px 15px;border-radius:30px;border:1px solid #ddd;font-size:15px;outline:none}
-.grid{padding:0 12px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.07);display:flex;flex-direction:column}
-.card img{width:100%;height:185px;object-fit:contain;background:#fff;padding:10px;display:block}
-.card-body{padding:10px;display:flex;flex-direction:column}
+.grid{padding:0 12px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.07);display:flex;flex-direction:column;height:100%}
+.card img{width:100%;height:185px;object-fit:contain;background:#fff;padding:10px;display:block;flex-shrink:0}
+.card-body{padding:10px;display:flex;flex-direction:column;flex:1}
 .card-body h3{font-size:15px;margin-bottom:3px;line-height:1.2}
 .card-body .tag{font-size:12px;color:#0a7a2f;font-weight:700}
-.sizes{margin:8px 0;display:flex;flex-wrap:wrap;gap:5px}
+.sizes{margin:8px 0;display:flex;flex-wrap:wrap;gap:5px;min-height:28px;align-content:flex-start}
 .sizes span{background:#f0f9f2;border:1px solid #c8eecf;color:#0a5a23;font-size:11px;font-weight:700;padding:4px 6px;border-radius:20px}
-/* RATE BOX - AB BILKUL WHATSAPP BUTTON KE UPAR CHIPKA HUA HOGA */
-.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:7px 8px;margin-top:6px;margin-bottom:0;width:100%}
+/* VIP FIX - AB SAB BOX BARABAR, KHALI JAGAH PEELAY BOX KE ANDAR */
+.price-box{background:#fff8e1;border:1px dashed #ffb300;border-radius:10px;padding:7px 8px;margin-top:6px;width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-start}
 .price-row{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:5px 0 1px;width:100%}
 .price-row b{font-size:12px;text-align:left;line-height:1.3}
 .price-row .rs{color:#0a7a2f;font-weight:900;font-size:12px;text-align:right;line-height:1.3;white-space:nowrap}
 .pcs{font-size:11px;color:#666;font-weight:600;text-align:left;padding-bottom:5px;border-bottom:1px solid #ffe9a8}
 .pcs:last-child{border-bottom:none}
-/* WHATSAPP BUTTON - AB KOI KHALI JAGAH NAHI, RATE KE FORAN BAAD */
-.order-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;padding:11px 5px;border-radius:10px;font-weight:800;margin-top:8px;font-size:13px;width:100%}
+/* WHATSAPP BUTTON - AB SAB KA EK HI LEVEL, FIX */
+.order-btn{display:block;text-align:center;background:#25D366;color:#fff;text-decoration:none;padding:11px 5px;border-radius:10px;font-weight:800;margin-top:10px;font-size:13px;width:100%;flex-shrink:0}
 .info{background:#fff;margin:0 14px 14px;padding:16px;border-radius:16px}
 .info h2{font-size:18px;margin-bottom:8px}
 .info li{margin-left:18px;margin-bottom:6px;font-size:14px}
